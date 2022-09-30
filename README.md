@@ -88,14 +88,22 @@ To install Ethereal Engine locally, the following pre-reqs are required.
   or [`asdf`](https://github.com/asdf-vm/asdf).)
 * C++ (for `node-gyp`), Python >=3.6 + [PIP](https://pypi.org/project/pip/), `make`
   and other build tools, for compiling Mediasoup.
+  -- recommended(if you have mediasoup error then install python-pip3 dependency if already installed then please update it).
   Although most of XREngine is written in TypeScript, it uses a [Mediasoup](https://mediasoup.org/)
   engine for WebRTC conferencing. See the [Mediasoup install instructions](https://mediasoup.org/documentation/v3/mediasoup/installation/)
   for more details.
 * Docker. (Although Docker is technically optional, running XREngine requires starting up
   half a dozen different services, and using Docker Compose will make your life dramatically
   easier.)
-* MariaDB and Redis. (If you're using Docker, containers for MariaDB and Redis 
+* MariaDB and Redis. (If you're using Docker you dont need to install MariaDB and Redis, containers for MariaDB and Redis 
   will automatically be started up.)
+* when you installed all the dependecies then run a command which is given below:-
+
+a) cp .env.local.default .env.local
+b) npm install
+c) npm run dev-docker
+d) npm run dev-reinit
+e) npm run dev
 
 ### Getting Started
 
