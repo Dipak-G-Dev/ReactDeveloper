@@ -41,7 +41,7 @@ export const authenticationSeed = {
       oauth: JSON.stringify({
         defaults: JSON.stringify({
           host:
-            config.server.hostname !== '127.0.0.1' && config.server.hostname !== 'localhost'
+            config.server.hostname !== '127.0.0.1' && config.server.hostname !== '35.88.136.224'
               ? config.server.hostname
               : config.server.hostname + ':' + config.server.port,
           protocol: 'https'
