@@ -228,7 +228,7 @@ const authentication = {
   oauth: {
     defaults: {
       host:
-        server.hostname !== '127.0.0.1' && server.hostname !== '35.88.136.224'
+        server.hostname !== '127.0.0.1' && server.hostname !== 'localhost'
           ? server.hostname
           : server.hostname + ':' + server.port,
       protocol: 'https'
